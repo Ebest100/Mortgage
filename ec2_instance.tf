@@ -22,3 +22,4 @@ resource "aws_instance" "example" {
     Name = "HelloWorld"
   }
 }
+We have added changesin DEV
