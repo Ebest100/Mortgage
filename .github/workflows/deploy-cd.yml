@@ -8,7 +8,7 @@ on: [pull_request]
 
 jobs:
   Deploy-our-lovely-artefact:
-    runs-on: Ubuntu-latest
+    runs-on: Ubuntu-latest #linux
     steps:
       - uses: actions/checkout@v4
       - name: create deploy folder
