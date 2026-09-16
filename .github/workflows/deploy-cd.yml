@@ -7,8 +7,8 @@ on: [pull_request]
  # c. what are the steps to run?
 
 jobs:
-  Deploy-our-lovely-artifact:
-    runs-on: Ubuntu-latest
+  Deploy-our-lovely-artefact:
+    runs-on: Ubuntu-latest #linux
     steps:
       - uses: actions/checkout@v4
       - name: create deploy folder
