@@ -1,19 +1,18 @@
-name:  Building something #NAME
+name:  Deploy our project #NAME
 # When should we run our action? : EVENT things that happen on the repo cretates a pull request, create branch, push
-on: [push]
+on: [pull_request]
 # What are the things you want to run?
  # a. Things to run are defined in jobs
  # b. Where should we run the jobs? runs-on
  # c. what are the steps to run?
 
 jobs:
-  Check-linux-version:
+  Deploy-our-lovely-artifact:
     runs-on: Ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: first step is to list all items in the repository
-        run: ls
-      - name: Check system memory
-        run: free
-      - name: check system usage
-        run: df -h
+      - name: create deploy folder
+        run: mkdir for deploy folder
+      - name: check system memory
+        run: cp ec2_instance.tf deploy-folder/
+        
