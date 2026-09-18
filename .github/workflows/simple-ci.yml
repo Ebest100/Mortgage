@@ -5,6 +5,7 @@ on: [push]
  # a. Things to run are defined in jobs
  # b. Where should we run the jobs? runs-on
  # c. what are the steps to run?
+ # add something  
 
 jobs:
   Check-linux-version:
